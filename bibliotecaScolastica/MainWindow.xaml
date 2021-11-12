@@ -8,40 +8,41 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Content="autore:" HorizontalAlignment="Left" Margin="265,4,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="aut" HorizontalAlignment="Left" Height="23" Margin="330,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="titolo:" HorizontalAlignment="Left" Margin="265,32,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tit" HorizontalAlignment="Left" Height="23" Margin="330,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="AnnoPubblicazione:" HorizontalAlignment="Left" Margin="265,60,0,0" VerticalAlignment="Top" Width="155" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="425,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="anno" HorizontalAlignment="Left" Height="23" Margin="425,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="editore:" HorizontalAlignment="Left" Margin="265,88,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="edit" HorizontalAlignment="Left" Height="23" Margin="330,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="nPagine:" HorizontalAlignment="Left" Margin="265,116,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="350,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="aggiungi Libro" HorizontalAlignment="Left" Margin="265,160,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
+        <TextBox x:Name="nPg" HorizontalAlignment="Left" Height="23" Margin="350,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="aggiungi Libro" HorizontalAlignment="Left" Margin="265,160,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="Button_Click_3"/>
         <Label Content="nome:" HorizontalAlignment="Left" Margin="5,6,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nome" HorizontalAlignment="Left" Height="23" Margin="70,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="indirizzo:" HorizontalAlignment="Left" Margin="5,34,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="indirizzo" HorizontalAlignment="Left" Height="23" Margin="85,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="orarioApertura:" HorizontalAlignment="Left" Margin="5,62,0,0" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="orarioApertura" HorizontalAlignment="Left" Height="23" Margin="125,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="orariochiusura" HorizontalAlignment="Left" Height="23" Margin="125,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="orarioChiusura:" HorizontalAlignment="Left" Margin="5,87,0,0" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <Button Content="Crea biblioteca" HorizontalAlignment="Left" Margin="5,126,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
+        <Button Content="Crea biblioteca" HorizontalAlignment="Left" Margin="5,126,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="Button_Click"/>
         <Label Content="autore:" HorizontalAlignment="Left" Margin="5,320,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="cerca" HorizontalAlignment="Left" Margin="195,326,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
+        <TextBox x:Name="aturore" HorizontalAlignment="Left" Height="23" Margin="70,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="cerca1" Content="cerca" HorizontalAlignment="Left" Margin="195,326,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="Button_Click_1"/>
         <Label Content="titolo:" HorizontalAlignment="Left" Margin="5,350,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="cerca" HorizontalAlignment="Left" Margin="195,356,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
-        <Label Content="nLibri:" HorizontalAlignment="Left" Margin="5,157,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ListBox HorizontalAlignment="Left" Height="253" Margin="550,40,0,0" VerticalAlignment="Top" Width="232"/>
+        <TextBox x:Name="titolo" HorizontalAlignment="Left" Height="23" Margin="70,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="cerca2" Content="cerca" HorizontalAlignment="Left" Margin="195,356,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="cerca2_Click"/>
+        <Label Content="nLibri:" HorizontalAlignment="Left" Margin="5,232,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
+        <TextBox x:Name="numLibri" HorizontalAlignment="Left" Height="23" Margin="70,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="libri" HorizontalAlignment="Left" Height="253" Margin="550,40,0,0" VerticalAlignment="Top" Width="232"/>
         <Label Content="libri:" HorizontalAlignment="Left" Margin="550,9,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
-        <Button Content="tempo lettura" HorizontalAlignment="Left" Margin="550,298,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
+        <Button Content="tempo lettura" HorizontalAlignment="Left" Margin="550,298,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="Button_Click_2"/>
         <Label Content="tempoLettura:" HorizontalAlignment="Left" Margin="547,332,0,0" VerticalAlignment="Top" Width="115" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="662,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tempolettura" HorizontalAlignment="Left" Height="23" Margin="662,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="risultato2" HorizontalAlignment="Left" Height="23" Margin="330,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="trovaNLibri" Content="trovaNLibri" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="trovaNLibri_Click"/>
+        <ListBox x:Name="libriAutore" HorizontalAlignment="Left" Height="149" Margin="330,202,0,0" VerticalAlignment="Top" Width="195"/>
 
     </Grid>
 </Window>
