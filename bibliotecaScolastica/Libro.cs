@@ -21,6 +21,19 @@ namespace bibliotecaScolastica
             _editore = editore;
             _nPagine = nPag;
         }
+        public override string ToString()
+        {
+            return _autore + _titolo + _annoPubblicazione + _editore + _nPagine;
+        }
+        public string readingTine()
+        {
+            if (_nPagine < 100)
+                return "1h";
+            else if (_nPagine > 100 && _nPagine < 200)
+                return "2h";
+            else
+                return "superiore alle 2h";
+        }
 
     }
 }
