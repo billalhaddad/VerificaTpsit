@@ -20,6 +20,7 @@ namespace bibliotecaScolastica
     /// </summary>
     public partial class MainWindow : Window
     {
+        //forza italia
         Biblioteca b;
         public MainWindow()
         {
