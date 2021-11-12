@@ -21,6 +21,14 @@ namespace bibliotecaScolastica
             TimeChiusura = tempoChius;
             _libri = libri;
         }
+        public Biblioteca(string nome, string indirizzo, int time, int tempoChius)
+        {
+            _nome = nome;
+            _indirizzio = indirizzo;
+            Time = time;
+            TimeChiusura = tempoChius;
+            _libri = new List<Libro>();
+        }
         public void AggiuntaLibro(Libro l)
         {
             _libri.Add(l);
