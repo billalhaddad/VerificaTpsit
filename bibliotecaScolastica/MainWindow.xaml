@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="autore:" HorizontalAlignment="Left" Margin="495,14,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="560,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="titolo:" HorizontalAlignment="Left" Margin="495,42,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="560,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="AnnoPubblicazione:" HorizontalAlignment="Left" Margin="495,70,0,0" VerticalAlignment="Top" Width="155" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="655,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="editore:" HorizontalAlignment="Left" Margin="495,98,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="560,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="nPagine:" HorizontalAlignment="Left" Margin="495,126,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="580,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="aggiungi Libro" HorizontalAlignment="Left" Margin="495,170,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
+        <Label Content="nome:" HorizontalAlignment="Left" Margin="15,14,0,0" VerticalAlignment="Top" Width="65" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="80,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="indirizzo:" HorizontalAlignment="Left" Margin="15,42,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="orarioApertura:" HorizontalAlignment="Left" Margin="15,70,0,0" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="orarioChiusura:" HorizontalAlignment="Left" Margin="15,95,0,0" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Button Content="Crea biblioteca" HorizontalAlignment="Left" Margin="15,134,0,0" VerticalAlignment="Top" Width="125" FontSize="16"/>
+
     </Grid>
 </Window>
