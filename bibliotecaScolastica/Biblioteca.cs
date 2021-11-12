@@ -27,7 +27,7 @@ namespace bibliotecaScolastica
         }
         public Libro ricercaLibroConTitolo(string Titolo)
         {
-            Libro libro=new Libro("",Titolo,new DateTime(2000,1,1)," ",100);
+            Libro libro=new Libro("unknown",Titolo,new DateTime(2000,1,1),"unknown",100);
             foreach (Libro l in _libri)
             {
                 if (l._titolo == Titolo)
